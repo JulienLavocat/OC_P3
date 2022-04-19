@@ -1,0 +1,23 @@
+@use "../../abstracts/colors.scss";
+
+.menu-item {
+	display: flex;
+	background-color: white;
+	border-radius: 20px;
+	padding: 10px;
+	box-shadow: colors.$box-shadow;
+
+	.item-details {
+		flex-grow: 1;
+	}
+
+	p {
+		margin-top: 5px;
+		color: #525252
+	}
+
+	span {
+		align-self: flex-end;
+		font-weight: 600;
+	}
+}

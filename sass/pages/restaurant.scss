@@ -1,0 +1,83 @@
+@use "../abstracts/colors.scss";
+@use "../components/primary-button.scss";
+@use "../components/cards/menu-item.scss";
+
+$title-color: #828282;
+
+main.restaurant {
+	background-color: colors.$bg-light-gray;
+}
+
+.restaurant {
+
+	.thumbnail {
+		object-fit: cover;
+		width: 100%;
+		height: 25vh;
+	}
+
+	.restaurant-name {
+
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding-bottom: 20px;
+
+		h1 {
+			font-family: "Shrikhand";
+			padding: 0;
+			margin: 0;
+		}
+
+		i {
+			font-size: 1.5em;
+		}
+
+	}
+
+	.menu {
+		display: flex;
+		flex-direction: column;
+		transform: translate(0%, -5vh);
+		padding: 20px;
+		background-color: colors.$bg-light-gray;
+		border-radius: 25px;
+
+		.menu-part {
+
+			margin-bottom: 40px;
+
+			h2 {
+				display: inline-block;
+				position: relative;
+				padding: 0;
+				margin: 0;
+				color: $title-color;
+				font-size: 1em;
+				text-transform: uppercase;
+				padding-bottom: 7px;
+			}
+
+			h2:after{
+				content: "";
+				position: absolute;
+				width: 50%;
+				height: 1px;
+				bottom: 0;
+				left: 0%;
+				border-bottom: 3px solid colors.$tertiary;
+			}
+
+			.part-items {
+				padding-top: 1em;
+				display: flex;
+				flex-direction: column;
+				gap: 1em;
+			}
+
+		}
+
+
+	}
+
+}

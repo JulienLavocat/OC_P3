@@ -1,7 +1,13 @@
 @import "mixins/headings";
 
 @include headings {
-    // font-family: "Shrikhand";
+	padding: 0;
+	margin: 0;
+}
+
+p {
+	padding: 0;
+	margin: 0;
 }
 
 body {

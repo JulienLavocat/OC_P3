@@ -1,0 +1,35 @@
+@use "../../abstracts/colors.scss";
+
+$box-shadow: 2px 4px 6px 0px rgba(122, 122, 122, 0.25);
+
+.step {
+	padding: 1.5em 15px 1.5em 10px;
+	background-color: colors.$bg-light-gray;
+	display: flex;
+	align-items: center;
+	border-radius: 25px;
+	box-shadow: $box-shadow;
+
+	span {
+		line-height: 1.5em;
+		transform: translate(-100%);
+		text-align: center;
+		color: white;
+		height: 1.5em;
+		width: 1.5em;
+		font-size: 0.9em;
+		background-color: colors.$primary;
+		border-radius: 50%;
+	}
+
+	i {
+		color: rgb(134, 134, 134);
+		font-size: 1.2em;
+		padding-right: 1em;
+	}
+
+	p {
+		color: black;
+		font-weight: 600;
+	}
+}
