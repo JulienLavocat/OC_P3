@@ -38,14 +38,16 @@ footer ul {
   padding: 0;
   list-style: none;
 }
-footer li {
+footer a {
+  text-decoration: none;
+  color: inherit;
   display: flex;
   align-items: center;
 }
-footer li i {
+footer a i {
   margin-right: 10px;
 }
-footer li p {
+footer a p {
   margin: 5px;
 }
 
