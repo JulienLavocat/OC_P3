@@ -33,3 +33,12 @@ $box-shadow: 2px 4px 6px 0px rgba(122, 122, 122, 0.25);
 		font-weight: 600;
 	}
 }
+
+.step:hover {
+	background-color: #f5edff;
+	color: #9356dc;
+
+	i {
+		color: #9356dc;
+	}
+}

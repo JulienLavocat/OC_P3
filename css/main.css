@@ -124,6 +124,14 @@ body {
   font-weight: 600;
 }
 
+.step:hover {
+  background-color: #f5edff;
+  color: #9356dc;
+}
+.step:hover i {
+  color: #9356dc;
+}
+
 .location {
   background-color: #eaeaea;
   display: flex;
