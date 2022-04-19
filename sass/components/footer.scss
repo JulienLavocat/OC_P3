@@ -1,0 +1,35 @@
+$logo-url: url("/images/logo/ohmyfood@2x.svg");
+
+footer {
+
+	padding: 30px;
+	background-color: #353535;
+	color: white;
+
+	.logo {
+		height: 1.5em;
+		margin-bottom: 20px;
+		filter: invert(100%)
+	}
+
+	ul {
+		text-decoration: none;
+		margin: 0;
+		padding: 0;
+		list-style: none;
+	}
+
+	li {
+		display: flex;
+		align-items: center;
+
+		i {
+			margin-right: 10px;
+		}
+		p {
+			margin: 5px
+		}
+	}
+
+
+}

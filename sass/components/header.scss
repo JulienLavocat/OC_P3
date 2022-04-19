@@ -1,0 +1,30 @@
+$header-y-padding: 20px;
+
+.header {
+	padding-top: calc($header-y-padding * 1.5);
+	padding-bottom: $header-y-padding;
+	display: flex;
+	align-items: center;
+	box-shadow: 0px 0px 6px 0px rgba(0,0,0,0.54);
+	position:relative;
+    z-index:2;
+
+
+	.logo {
+		position: absolute;
+        left: 50%;
+        margin-right: -50%;
+        transform: translate(-50%);
+	}
+
+	.return-button  {
+		padding-left: 1em;
+		font-size: 1.5em;
+		color: rgb(70, 70, 70);
+
+		&.hide {
+			visibility: hidden;
+		}
+	}
+
+}

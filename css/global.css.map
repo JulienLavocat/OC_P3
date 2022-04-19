@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "mappings": "AAMA,AAAA,IAAI,CAAC;EACJ,KAAK,EAAE,KAAK;EACZ,MAAM,EAAE,KAAK;EACb,WAAW,EAAE,QAAQ;CACrB",
+    "sources": [
+        "../sass/global.scss",
+        "../sass/mixins/headings.scss"
+    ],
+    "names": [],
+    "file": "global.css"
+}

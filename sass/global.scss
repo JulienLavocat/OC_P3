@@ -1,0 +1,11 @@
+@import "mixins/headings";
+
+@include headings {
+    // font-family: "Shrikhand";
+}
+
+body {
+	width: 100vw;
+	height: 100vh;
+	font-family: "Roboto";
+}

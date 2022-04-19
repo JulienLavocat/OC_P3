@@ -1,0 +1,187 @@
+.header {
+  padding-top: 30px;
+  padding-bottom: 20px;
+  display: flex;
+  align-items: center;
+  box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.54);
+  position: relative;
+  z-index: 2;
+}
+.header .logo {
+  position: absolute;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%);
+}
+.header .return-button {
+  padding-left: 1em;
+  font-size: 1.5em;
+  color: rgb(70, 70, 70);
+}
+.header .return-button.hide {
+  visibility: hidden;
+}
+
+footer {
+  padding: 30px;
+  background-color: #353535;
+  color: white;
+}
+footer .logo {
+  height: 1.5em;
+  margin-bottom: 20px;
+  filter: invert(100%);
+}
+footer ul {
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+footer li {
+  display: flex;
+  align-items: center;
+}
+footer li i {
+  margin-right: 10px;
+}
+footer li p {
+  margin: 5px;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  font-family: "Roboto";
+}
+
+.location {
+  background-color: gainsboro;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgb(46, 46, 46);
+}
+.location i {
+  padding-right: 15px;
+}
+
+.explore {
+  background-color: rgb(246, 246, 246);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding-top: 40px;
+  padding-bottom: 50px;
+}
+.explore h1 {
+  margin: 0;
+  width: 70%;
+  font-size: 1.5em;
+}
+.explore p {
+  color: rgb(75, 75, 75);
+  width: 90%;
+}
+.explore button {
+  color: gra;
+  margin-top: 10px;
+  font-family: "Roboto";
+}
+.explore .btn-grad {
+  background-image: linear-gradient(to right, #DA22FF 0%, #9733EE 51%, #DA22FF 100%);
+  margin: 10px;
+  padding: 15px 20px;
+  text-align: center;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  border-radius: 30px;
+  border: none;
+  font-size: 1.2em;
+  box-shadow: 2px 4px 6px 0px rgba(122, 122, 122, 0.25);
+  display: block;
+}
+.explore .btn-grad:hover {
+  background-position: right center;
+  /* change the direction of the change here */
+  color: #fff;
+  text-decoration: none;
+}
+
+.working {
+  margin: 40px 20px;
+}
+.working .steps {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.working .steps .step {
+  padding: 10px 15px 10px 10px;
+  background-color: #F6F6F6;
+  display: flex;
+  align-items: center;
+  border-radius: 25px;
+  box-shadow: 2px 4px 6px 0px rgba(122, 122, 122, 0.25);
+}
+.working .steps .step span {
+  line-height: 1.2em;
+  transform: translate(-100%);
+  text-align: center;
+  color: white;
+  height: 1.2em;
+  width: 1.2em;
+  font-size: 0.9em;
+  background-color: #9356DC;
+  border-radius: 50%;
+}
+.working .steps .step i {
+  color: rgb(134, 134, 134);
+  font-size: 1.2em;
+  padding-right: 1em;
+}
+.working .steps .step p {
+  color: black;
+  font-weight: 600;
+}
+
+.restaurants {
+  padding: 40px 20px;
+  background-color: rgb(246, 246, 246);
+}
+.restaurants .restaurants-cards {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  gap: 1em;
+}
+.restaurants .card {
+  background-color: white;
+  border-radius: 25px;
+  box-shadow: 2px 4px 6px 0px rgba(122, 122, 122, 0.25);
+  text-decoration: none;
+  color: inherit;
+}
+.restaurants .card .thumbnail {
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  object-fit: cover;
+  width: 100%;
+  height: 20vh;
+}
+.restaurants .card .content {
+  margin: 15px;
+}
+.restaurants .card .content .title {
+  font-size: 1.2em;
+  padding: 0;
+  margin: 0px 0px 5px 0px;
+}
+.restaurants .card .content .description {
+  padding: 0;
+  margin: 0;
+}
+
+/*# sourceMappingURL=main.css.map */

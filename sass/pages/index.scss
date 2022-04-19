@@ -1,0 +1,163 @@
+@use "../abstracts/colors.scss";
+
+$sections-padding: 40px 20px;
+$sections-background: rgba(246,246,246,255);
+
+$box-shadow: 2px 4px 6px 0px rgba(122, 122, 122, 0.25);
+
+$card-border: 25px;
+
+.location {
+	background-color: gainsboro;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: rgb(46, 46, 46);
+
+	i {
+		padding-right: 15px;
+	}
+}
+
+.explore {
+	background-color: $sections-background;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	padding-top: 40px;
+	padding-bottom: 50px;
+
+	h1 {
+		margin: 0;
+		width: 70%;
+		font-size: 1.5em;
+	}
+
+	p {
+		color: rgb(75, 75, 75);
+		width: 90%;
+	}
+
+	button {
+		color: gra;
+		margin-top: 10px;
+		font-family: "Roboto";
+	}
+
+	// Source: https://gradientbuttons.colorion.co/
+
+	.btn-grad {
+		background-image: linear-gradient(to right, #DA22FF 0%, #9733EE  51%, #DA22FF  100%);
+
+		margin: 10px;
+		padding: 15px 20px;
+		text-align: center;
+		transition: 0.5s;
+		background-size: 200% auto;
+		color: white;
+		border-radius: 30px;
+		border: none;
+		font-size: 1.2em;
+		box-shadow: $box-shadow;
+
+		display: block;
+
+		&:hover {
+			background-position: right center; /* change the direction of the change here */
+			color: #fff;
+			text-decoration: none;
+		}
+	}
+
+}
+
+.working {
+
+	margin: $sections-padding;
+
+	.steps {
+
+		display: flex;
+		flex-direction: column;
+		gap: 20px;
+
+		.step {
+			padding: 10px 15px 10px 10px;
+			background-color: #F6F6F6;
+			display: flex;
+			align-items: center;
+			border-radius: 25px;
+			box-shadow: $box-shadow;
+
+			span {
+				line-height: 1.2em;
+				transform: translate(-100%);
+				text-align: center;
+				color: white;
+				height: 1.2em;
+				width: 1.2em;
+				font-size: 0.9em;
+				background-color: colors.$primary;
+				border-radius: 50%;
+			}
+
+			i {
+				color: rgb(134, 134, 134);
+				font-size: 1.2em;
+				padding-right: 1em;
+			}
+
+			p {
+				color: black;
+				font-weight: 600;
+			}
+		}
+
+	}
+
+}
+
+.restaurants {
+	padding: $sections-padding;
+	background-color: $sections-background;
+
+	.restaurants-cards {
+		display: flex;
+		flex-direction: column;
+		justify-items: center;
+		gap: 1em;
+	}
+
+	.card {
+		background-color: white;
+		border-radius: $card-border;
+		box-shadow: $box-shadow;
+        text-decoration: none;
+		color: inherit;
+
+		.thumbnail {
+			border-top-left-radius: $card-border;
+			border-top-right-radius: $card-border;
+			object-fit: cover;
+			width: 100%;
+			height: 20vh;
+		}
+
+		.content {
+			margin: 15px;
+
+			.title {
+				font-size: 1.2em;
+				padding: 0;
+				margin: 0px 0px 5px 0px;
+			}
+
+			.description {
+				padding: 0;
+				margin: 0;
+			}
+		}
+	}
+
+}
