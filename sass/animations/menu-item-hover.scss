@@ -1,0 +1,11 @@
+.menu-item:hover > .select {
+	transition: width 0.2s linear;
+	visibility: visible;
+	width: 15%;
+}
+
+.menu-item:hover > .select i {
+	transition: transform 0.35s linear;
+	animation-direction: reverse;
+	transform: rotate(0deg);
+}

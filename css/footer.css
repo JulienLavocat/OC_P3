@@ -18,7 +18,9 @@ footer ul {
   list-style: none;
 }
 
-footer li {
+footer a {
+  text-decoration: none;
+  color: inherit;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -27,11 +29,11 @@ footer li {
           align-items: center;
 }
 
-footer li i {
+footer a i {
   margin-right: 10px;
 }
 
-footer li p {
+footer a p {
   margin: 5px;
 }
 /*# sourceMappingURL=footer.css.map */

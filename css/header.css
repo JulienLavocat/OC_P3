@@ -27,7 +27,7 @@
   color: #464646;
 }
 
-.header .return-button.hide {
+.header .return-button.hidden {
   visibility: hidden;
 }
 /*# sourceMappingURL=header.css.map */

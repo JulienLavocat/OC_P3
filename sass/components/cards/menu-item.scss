@@ -1,23 +1,50 @@
 @use "../../abstracts/colors.scss";
+@use "../../animations/menu-item-enter.scss";
+@use "../../animations/menu-item-hover.scss";
+
+$radius: 15px;
 
 .menu-item {
 	display: flex;
 	background-color: white;
-	border-radius: 20px;
-	padding: 10px;
+	border-radius: $radius;
 	box-shadow: colors.$box-shadow;
+	text-decoration: none;
+	color: initial;
+	opacity: 0;
 
 	.item-details {
+		padding: 10px;
 		flex-grow: 1;
+		font-size: 0.9em;
 	}
 
 	p {
+		font-size: 1em;
 		margin-top: 5px;
 		color: #525252
 	}
 
 	span {
+		padding: 10px;
 		align-self: flex-end;
 		font-weight: 600;
+	}
+
+	.select {
+		width: 0%;
+		display: flex;
+		border-top-right-radius: $radius;
+		border-bottom-right-radius: $radius;
+		background-color: colors.$tertiary;
+		align-items: center;
+		justify-content: center;
+		color: white;
+		font-size: 1.5em;
+		visibility: hidden;
+
+		i {
+			transform: rotate(360deg);
+		}
 	}
 }
