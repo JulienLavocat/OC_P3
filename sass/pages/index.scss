@@ -1,6 +1,8 @@
 @use "../abstracts/colors.scss";
+@use "../animations/loading-spinner.scss";
 @use "../components/cards/restaurant.scss";
 @use "../components/cards/step.scss";
+@use "../animations/hide-page.scss";
 
 $sections-padding: 40px 20px;
 $sections-background: colors.$bg-light-gray;
@@ -48,11 +50,9 @@ $box-shadow: 2px 4px 6px 0px rgba(122, 122, 122, 0.25);
 		margin-top: 10px;
 		font-family: "Roboto";
 	}
-
 }
 
 .working {
-
 	margin: $sections-padding;
 
 	.steps {
@@ -60,7 +60,6 @@ $box-shadow: 2px 4px 6px 0px rgba(122, 122, 122, 0.25);
 		flex-direction: column;
 		gap: 20px;
 	}
-
 }
 
 .restaurants {
@@ -73,5 +72,4 @@ $box-shadow: 2px 4px 6px 0px rgba(122, 122, 122, 0.25);
 		justify-items: center;
 		gap: 1em;
 	}
-
 }
