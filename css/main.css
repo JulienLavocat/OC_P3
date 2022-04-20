@@ -297,19 +297,19 @@ body {
 }
 
 .menu-item:nth-child(1) {
-  animation-delay: 0.1s;
+  animation-delay: 0.3s;
 }
 
 .menu-item:nth-child(2) {
-  animation-delay: 0.25s;
+  animation-delay: 0.4s;
 }
 
 .menu-item:nth-child(3) {
-  animation-delay: 0.35s;
+  animation-delay: 0.5s;
 }
 
 .menu-item:hover > .select {
-  transition: width 0.2s linear;
+  transition: width 0.3s linear;
   visibility: visible;
   width: 15%;
 }
