@@ -9,7 +9,6 @@ main.restaurant {
 }
 
 .restaurant {
-
 	.thumbnail {
 		object-fit: cover;
 		width: 100%;
@@ -17,7 +16,6 @@ main.restaurant {
 	}
 
 	.restaurant-name {
-
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
@@ -28,11 +26,6 @@ main.restaurant {
 			padding: 0;
 			margin: 0;
 		}
-
-		i {
-			font-size: 1.5em;
-		}
-
 	}
 
 	.menu {
@@ -44,7 +37,6 @@ main.restaurant {
 		border-radius: 25px;
 
 		.menu-part {
-
 			margin-bottom: 40px;
 
 			h2 {
@@ -58,7 +50,7 @@ main.restaurant {
 				padding-bottom: 7px;
 			}
 
-			h2:after{
+			h2:after {
 				content: "";
 				position: absolute;
 				width: 50%;
@@ -74,15 +66,11 @@ main.restaurant {
 				flex-direction: column;
 				gap: 1em;
 			}
-
 		}
-
-
 	}
 
 	button {
 		text-align: center;
 		align-self: center;
 	}
-
 }
