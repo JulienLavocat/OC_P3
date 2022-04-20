@@ -287,6 +287,12 @@ body {
   transform: rotate(0deg);
 }
 
+.menu-item:hover > .item-details {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
 .menu-item {
   display: flex;
   background-color: white;
