@@ -1,2 +1,4 @@
 maquettes
 .DS_Store
+**/node_modules
+static-generator/rendered

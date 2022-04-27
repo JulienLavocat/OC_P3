@@ -1,166 +1,197 @@
 <!DOCTYPE html>
 <html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>OhMyFood</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Shrikhand"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Roboto"
+    />
+    <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen"
+      href="css/normalize.css"
+    />
+    <script
+      src="https://kit.fontawesome.com/1b6f8c21e8.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
 
-<head>
-	<meta charset='utf-8'>
-	<meta http-equiv='X-UA-Compatible' content='IE=edge'>
-	<title>OhMyFood</title>
-	<meta name='viewport' content='width=device-width, initial-scale=1'>
-	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Shrikhand">
-	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
-	<link rel='stylesheet' type='text/css' media='screen' href='css/main.css'>
-	<link rel='stylesheet' type='text/css' media='screen' href='css/normalize.css'>
-	<script src="https://kit.fontawesome.com/1b6f8c21e8.js" crossorigin="anonymous"></script>
-</head>
+  <body class="home">
+    <div class="loading-spinner">
+      <i class="fa-solid fa-utensils"></i>
+    </div>
 
-<body class="home">
+    <header class="header">
+      <i class="return-button fa fa-arrow-left hidden" aria-hidden="true"></i>
+      <img class="logo" src="images/logo/ohmyfood@2x.svg" alt="logo" />
+    </header>
+    <main>
+      <div class="location">
+        <i class="fa-solid fa-location-dot"></i>
+        <p>Paris, Belleville</p>
+      </div>
+      <section class="explore">
+        <h1>Réservez le menu qui vous convient</h1>
+        <p>
+          Découvrez des restaurants d'exception, séléctionnés par nos soins.
+        </p>
+        <button class="primary-button">Explorer nos restaurants</button>
+      </section>
 
-	<div class="loading-spinner">
-		<i class="fa-solid fa-apple-whole"></i>
-	</div>
+      <section class="working">
+        <h1>Fonctionnement</h1>
+        <div class="steps">
+          <div class="step">
+            <span>1</span>
+            <i class="fa-solid fa-mobile-screen"></i>
+            <p>Choisissez un restaurant</p>
+          </div>
+          <div class="step">
+            <span>2</span>
+            <i class="fa-solid fa-list"></i>
+            <p>Composez votre menu</p>
+          </div>
+          <div class="step">
+            <span>3</span>
+            <i class="fa-solid fa-store"></i>
+            <p>Dégustez au restaurant</p>
+          </div>
+        </div>
+      </section>
 
-	<header class="header">
-		<i class="return-button fa fa-arrow-left hidden" aria-hidden="true"></i>
-		<img class="logo" src="images/logo/ohmyfood@2x.svg" alt="logo">
-	</header>
-	<main>
-		<div class="location">
-			<i class="fa-solid fa-location-dot"></i>
-			<p>Paris, Belleville</p>
-		</div>
-		<section class="explore">
-			<h1>Réservez le menu qui vous convient</h1>
-			<p>Découvrez des restaurants d'exception, séléctionnés par nos soins.</p>
-			<button class="primary-button">Explorer nos restaurants</button>
-		</section>
+      <section class="restaurants">
+        <h1>Restaurants</h1>
+        <div class="restaurants-cards">
+          <a class="restaurant-card" href="la-palette-du-gout.html">
+            <img
+              class="thumbnail"
+              src="images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg"
+              alt="restaurant thumbnail"
+            />
+            <div class="content">
+              <div>
+                <h2 class="title">La palette du goût</h2>
+                <p class="description">Ménilmontant</p>
+              </div>
+              <button class="heart-button">
+                <span class="fa-stack" style="vertical-align: top">
+                  <i class="fa-regular fa-stack-2x fa-heart"></i>
+                  <i
+                    class="fa-solid fa-stack-1x fa-heart fill-icon"
+                    style="transform: translate(0px, -0.1em)"
+                  ></i>
+                </span>
+              </button>
+            </div>
+            <p class="new">Nouveau</p>
+          </a>
+          <a class="restaurant-card" href="la-note-enchantee.html">
+            <img
+              class="thumbnail"
+              alt="restaurant thumbnail"
+              src="images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg"
+            />
+            <div class="content">
+              <div>
+                <h2 class="title">La note enchantée</h2>
+                <p class="description">Charonne</p>
+              </div>
+              <button class="heart-button">
+                <span class="fa-stack" style="vertical-align: top">
+                  <i class="fa-regular fa-stack-2x fa-heart"></i>
+                  <i
+                    class="fa-solid fa-stack-1x fa-heart fill-icon"
+                    style="transform: translate(0px, -0.1em)"
+                  ></i>
+                </span>
+              </button>
+            </div>
+            <p class="new">Nouveau</p>
+          </a>
+          <a class="restaurant-card" href="a-la-francaise.html">
+            <img
+              class="thumbnail"
+              alt="restaurant thumbnail"
+              src="images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg"
+            />
+            <div class="content">
+              <div>
+                <h2 class="title">A la française</h2>
+                <p class="description">Cité Rouge</p>
+              </div>
+              <button class="heart-button">
+                <span class="fa-stack" style="vertical-align: top">
+                  <i class="fa-regular fa-stack-2x fa-heart"></i>
+                  <i
+                    class="fa-solid fa-stack-1x fa-heart fill-icon"
+                    style="transform: translate(0px, -0.1em)"
+                  ></i>
+                </span>
+              </button>
+            </div>
+          </a>
+          <a class="restaurant-card" href="le-delice-des-sens.html">
+            <img
+              class="thumbnail"
+              alt="restaurant thumbnail"
+              src="images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg"
+            />
+            <div class="content">
+              <div>
+                <h2 class="title">Le délice des sens</h2>
+                <p class="description">Folie-Méricourt</p>
+              </div>
+              <button class="heart-button">
+                <span class="fa-stack" style="vertical-align: top">
+                  <i class="fa-regular fa-stack-2x fa-heart"></i>
+                  <i
+                    class="fa-solid fa-stack-1x fa-heart fill-icon"
+                    style="transform: translate(0px, -0.1em)"
+                  ></i>
+                </span>
+              </button>
+            </div>
+          </a>
+        </div>
+      </section>
+    </main>
 
-		<section class="working">
-			<h1>Fonctionnement</h1>
-			<div class="steps">
-				<div class="step">
-					<span>1</span>
-					<i class="fa-solid fa-mobile-screen"></i>
-					<p>Choisissez un restaurant</p>
-				</div>
-				<div class="step">
-					<span>2</span>
-					<i class="fa-solid fa-list"></i>
-					<p>Composez votre menu</p>
-				</div>
-				<div class="step">
-					<span>3</span>
-					<i class="fa-solid fa-store"></i>
-					<p>Dégustez au restaurant</p>
-				</div>
-			</div>
-		</section>
-
-		<section class="restaurants">
-			<h1>Restaurants</h1>
-			<div class="restaurants-cards">
-				<a class="restaurant-card" href="#">
-					<img class="thumbnail" src="images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg"
-						alt="restaurant thumbnail">
-					<div class="content">
-						<div>
-							<h2 class="title">La palette du goût</h2>
-							<p class="description">Ménilmontant</p>
-						</div>
-						<button class="heart-button">
-							<span class="fa-stack" style="vertical-align: top;">
-								<i class="fa-regular fa-stack-2x fa-heart"></i>
-								<i class="fa-solid fa-stack-1x fa-heart fill-icon"
-									style="transform: translate(0px, -0.1em);"></i>
-							</span>
-						</button>
-					</div>
-					<p class="new">Nouveau</p>
-				</a>
-				<a class="restaurant-card" href="#">
-					<img class="thumbnail" alt="restaurant thumbnail"
-						src="images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg">
-					<div class="content">
-						<div>
-							<h2 class="title">La note enchantée</h2>
-							<p class="description">Charonne</p>
-						</div>
-						<button class="heart-button">
-							<span class="fa-stack" style="vertical-align: top;">
-								<i class="fa-regular fa-stack-2x fa-heart"></i>
-								<i class="fa-solid fa-stack-1x fa-heart fill-icon"
-									style="transform: translate(0px, -0.1em);"></i>
-							</span>
-						</button>
-					</div>
-					<p class="new">Nouveau</p>
-				</a>
-				<a class="restaurant-card" href="a-la-francaise.html">
-					<img class="thumbnail" alt="restaurant thumbnail"
-						src="images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg">
-					<div class="content">
-						<div>
-							<h2 class="title">A la française</h2>
-							<p class="description">Cité Rouge</p>
-						</div>
-						<button class="heart-button">
-							<span class="fa-stack" style="vertical-align: top;">
-								<i class="fa-regular fa-stack-2x fa-heart"></i>
-								<i class="fa-solid fa-stack-1x fa-heart fill-icon"
-									style="transform: translate(0px, -0.1em);"></i>
-							</span>
-						</button>
-					</div>
-				</a>
-				<a class="restaurant-card" href="#">
-					<img class="thumbnail" alt="restaurant thumbnail"
-						src="images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg">
-					<div class="content">
-						<div>
-							<h2 class="title">Le délice des sens</h2>
-							<p class="description">Folie-Méricourt</p>
-						</div>
-						<button class="heart-button">
-							<span class="fa-stack" style="vertical-align: top;">
-								<i class="fa-regular fa-stack-2x fa-heart"></i>
-								<i class="fa-solid fa-stack-1x fa-heart fill-icon"
-									style="transform: translate(0px, -0.1em);"></i>
-							</span>
-						</button>
-					</div>
-				</a>
-			</div>
-		</section>
-
-	</main>
-
-	<footer>
-		<img class="logo" alt="logo" src="images/logo/ohmyfood@2x.svg">
-		<ul>
-			<li>
-				<a href="#">
-					<i class="fa-solid fa-utensils"></i>
-					<p>Proposer un restaurant</p>
-				</a>
-			</li>
-			<li>
-				<a href="#">
-					<i class="fa-solid fa-handshake-angle"></i>
-					<p>Devenir partenaire</p>
-				</a>
-			</li>
-			<li>
-				<a href="#">
-					<p>Mentions légales</p>
-				</a>
-			</li>
-			<li>
-				<a href="mailto:contact@ohmyfood.com">
-					<p>Contact</p>
-				</a>
-			</li>
-		</ul>
-	</footer>
-
-</body>
-
+    <footer>
+      <img class="logo" alt="logo" src="images/logo/ohmyfood@2x.svg" />
+      <ul>
+        <li>
+          <a href="#">
+            <i class="fa-solid fa-utensils"></i>
+            <p>Proposer un restaurant</p>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="fa-solid fa-handshake-angle"></i>
+            <p>Devenir partenaire</p>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <p>Mentions légales</p>
+          </a>
+        </li>
+        <li>
+          <a href="mailto:contact@ohmyfood.com">
+            <p>Contact</p>
+          </a>
+        </li>
+      </ul>
+    </footer>
+  </body>
 </html>
