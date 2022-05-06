@@ -165,6 +165,16 @@ body {
   color: #0e8f70;
   font-size: 800;
 }
+@media (min-width: 768px) and (max-width: 1023px) {
+  .restaurant-card {
+    flex: 1 0 33%;
+  }
+}
+@media (min-width: 1024px) {
+  .restaurant-card {
+    flex: 1 0 21%;
+  }
+}
 
 .step {
   padding: 1.5em 15px 1.5em 10px;
@@ -193,6 +203,11 @@ body {
 .step p {
   color: black;
   font-weight: 600;
+}
+@media (min-width: 1024px) {
+  .step {
+    width: 25%;
+  }
 }
 
 .step:hover {
@@ -250,6 +265,13 @@ body {
   flex-direction: column;
   gap: 20px;
 }
+@media (min-width: 1024px) {
+  .working .steps {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
 
 .restaurants {
   padding: 40px 20px;
@@ -258,8 +280,21 @@ body {
 .restaurants .restaurants-cards {
   display: flex;
   flex-direction: column;
-  justify-items: center;
   gap: 1em;
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  .restaurants .restaurants-cards {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+@media (min-width: 1024px) {
+  .restaurants .restaurants-cards {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
 }
 
 .primary-button {
@@ -302,11 +337,11 @@ body {
 }
 
 .menu-item:nth-child(2) {
-  animation-delay: 0.4s;
+  animation-delay: 0.5s;
 }
 
 .menu-item:nth-child(3) {
-  animation-delay: 0.5s;
+  animation-delay: 0.7s;
 }
 
 .menu-item:hover > .select {

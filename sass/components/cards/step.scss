@@ -1,5 +1,7 @@
 @use "../../abstracts/colors.scss";
 
+@import "../../mixins/mq.scss";
+
 $box-shadow: 2px 4px 6px 0px rgba(122, 122, 122, 0.25);
 
 .step {
@@ -31,6 +33,10 @@ $box-shadow: 2px 4px 6px 0px rgba(122, 122, 122, 0.25);
 	p {
 		color: black;
 		font-weight: 600;
+	}
+
+	@include desktop {
+		width: 25%;
 	}
 }
 

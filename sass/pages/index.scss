@@ -3,6 +3,7 @@
 @use "../components/cards/restaurant.scss";
 @use "../components/cards/step.scss";
 @use "../animations/hide-page.scss";
+@import "../mixins/mq.scss";
 
 $sections-padding: 40px 20px;
 $sections-background: colors.$bg-light-gray;
@@ -59,7 +60,15 @@ $box-shadow: 2px 4px 6px 0px rgba(122, 122, 122, 0.25);
 		display: flex;
 		flex-direction: column;
 		gap: 20px;
+
+		@include desktop {
+			flex-direction: row;
+			flex-wrap: wrap;
+			justify-content: space-between;
+		}
 	}
+
+	
 }
 
 .restaurants {
@@ -69,7 +78,20 @@ $box-shadow: 2px 4px 6px 0px rgba(122, 122, 122, 0.25);
 	.restaurants-cards {
 		display: flex;
 		flex-direction: column;
-		justify-items: center;
 		gap: 1em;
+
+		@include tablet {
+			flex-direction: row;
+			flex-wrap: wrap;
+			justify-content: space-between;
+		}
+
+		@include desktop {
+			flex-direction: row;
+			flex-wrap: wrap;
+			justify-content: space-between;
+		}
 	}
+
+	
 }

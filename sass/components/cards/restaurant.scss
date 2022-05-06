@@ -1,6 +1,8 @@
 @use "../../abstracts/colors.scss";
 @use "../heart-button.scss";
 
+@import "../../mixins/mq.scss";
+
 $card-border: 25px;
 $box-shadow: 2px 4px 6px 0px rgba(122, 122, 122, 0.25);
 
@@ -46,5 +48,13 @@ $box-shadow: 2px 4px 6px 0px rgba(122, 122, 122, 0.25);
 		background-color: colors.$tertiary;
 		color: #0e8f70;
 		font-size: 800;
+	}
+
+	@include tablet {
+		flex: 1 0 33%;
+	}
+
+	@include desktop {
+		flex: 1 0 21%;
 	}
 }
