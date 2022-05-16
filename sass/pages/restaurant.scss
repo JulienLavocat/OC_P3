@@ -2,6 +2,8 @@
 @use "../components/primary-button.scss";
 @use "../components/cards/menu-item.scss";
 
+@import "../mixins/mq.scss";
+
 $title-color: #828282;
 
 main.restaurant {
@@ -36,8 +38,32 @@ main.restaurant {
 		background-color: colors.$bg-light-gray;
 		border-radius: 25px;
 
+		.restaurant-menu {
+			@include desktop-tablet {
+				display: flex;
+				width: 100%;
+				justify-content: space-around;
+				gap: 1em;
+				flex-wrap: wrap;
+			}
+
+			@include tablet {
+				justify-content: space-between;
+			}
+			
+		}
+
 		.menu-part {
 			margin-bottom: 40px;
+			width: 100%;
+
+			@include desktop {
+				width: 30%;
+			}
+
+			@include tablet {
+				width: 45%;
+			}
 
 			h2 {
 				display: inline-block;

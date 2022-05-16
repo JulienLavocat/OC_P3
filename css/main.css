@@ -165,7 +165,7 @@ body {
   color: #0e8f70;
   font-size: 800;
 }
-@media (min-width: 768px) and (max-width: 1023px) {
+@media (min-width: 600px) and (max-width: 1023px) {
   .restaurant-card {
     flex: 1 0 33%;
   }
@@ -189,7 +189,9 @@ body {
   transform: translate(-100%);
   text-align: center;
   color: white;
+  min-height: 1.5em;
   height: 1.5em;
+  min-width: 1.5em;
   width: 1.5em;
   font-size: 0.9em;
   background-color: #9356DC;
@@ -203,6 +205,11 @@ body {
 .step p {
   color: black;
   font-weight: 600;
+}
+@media (min-width: 600px) and (max-width: 1023px) {
+  .step {
+    width: 25%;
+  }
 }
 @media (min-width: 1024px) {
   .step {
@@ -272,6 +279,13 @@ body {
     justify-content: space-between;
   }
 }
+@media (min-width: 600px) and (max-width: 1023px) {
+  .working .steps {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
 
 .restaurants {
   padding: 40px 20px;
@@ -282,7 +296,7 @@ body {
   flex-direction: column;
   gap: 1em;
 }
-@media (min-width: 768px) and (max-width: 1023px) {
+@media (min-width: 600px) and (max-width: 1023px) {
   .restaurants .restaurants-cards {
     flex-direction: row;
     flex-wrap: wrap;
@@ -342,6 +356,10 @@ body {
 
 .menu-item:nth-child(3) {
   animation-delay: 0.7s;
+}
+
+.menu-item:nth-child(4) {
+  animation-delay: 0.9s;
 }
 
 .menu-item:hover > .select {
@@ -430,8 +448,33 @@ main.restaurant {
   background-color: #f6f6f6;
   border-radius: 25px;
 }
+@media (min-width: 600px) {
+  .restaurant .menu .restaurant-menu {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    gap: 1em;
+    flex-wrap: wrap;
+  }
+}
+@media (min-width: 600px) and (max-width: 1023px) {
+  .restaurant .menu .restaurant-menu {
+    justify-content: space-between;
+  }
+}
 .restaurant .menu .menu-part {
   margin-bottom: 40px;
+  width: 100%;
+}
+@media (min-width: 1024px) {
+  .restaurant .menu .menu-part {
+    width: 30%;
+  }
+}
+@media (min-width: 600px) and (max-width: 1023px) {
+  .restaurant .menu .menu-part {
+    width: 45%;
+  }
 }
 .restaurant .menu .menu-part h2 {
   display: inline-block;
