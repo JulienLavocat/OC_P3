@@ -56,6 +56,11 @@ $box-shadow: 2px 4px 6px 0px rgba(122, 122, 122, 0.25);
 .working {
 	margin: $sections-padding;
 
+	h2 {
+		font-size: 2em;
+		margin: 0.67em 0;
+	}
+
 	.steps {
 		display: flex;
 		flex-direction: column;
@@ -80,6 +85,11 @@ $box-shadow: 2px 4px 6px 0px rgba(122, 122, 122, 0.25);
 .restaurants {
 	padding: $sections-padding;
 	background-color: colors.$bg-light-gray;
+
+	h2 {
+		font-size: 2em;
+		margin: 0.67em 0;
+	}
 
 	.restaurants-cards {
 		display: flex;

@@ -267,6 +267,10 @@ body {
 .working {
   margin: 40px 20px;
 }
+.working h2 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
 .working .steps {
   display: flex;
   flex-direction: column;
@@ -290,6 +294,10 @@ body {
 .restaurants {
   padding: 40px 20px;
   background-color: #f6f6f6;
+}
+.restaurants h2 {
+  font-size: 2em;
+  margin: 0.67em 0;
 }
 .restaurants .restaurants-cards {
   display: flex;
