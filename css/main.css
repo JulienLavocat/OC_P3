@@ -163,7 +163,6 @@ body {
   padding: 5px;
   background-color: #99E2D0;
   color: #0e8f70;
-  font-size: 800;
 }
 @media (min-width: 600px) and (max-width: 1023px) {
   .restaurant-card {

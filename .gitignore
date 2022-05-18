@@ -1,4 +1,5 @@
 maquettes
 .DS_Store
 **/node_modules
-static-generator/rendered
+static-generator
+watch.sh
